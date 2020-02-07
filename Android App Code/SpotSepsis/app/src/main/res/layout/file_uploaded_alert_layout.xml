@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="20dp">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/uploadStatusImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/upload_success"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/uploadStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yay!!"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/statusDescTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your report is successfully uploaded."
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/actionButtonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK, Cool"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_margin="20dp"
+            android:background="#43A047"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/cancelAlertDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
