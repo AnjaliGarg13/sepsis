@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    
+
+
+  .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+ /*top: 0;*/
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #6d58f5;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bottomright {
+  position: absolute;
+  top: 87%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.bottomleft {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.button {
+ background-color: #6d58f5; 
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#ip2 {
+   border-radius: 25px;
+
+    background: #ebebed;
+    padding: 20px; 
+    width: 500px;
+    height: 50px; 
+}
+
+p{
+  font-family: 'Poppins';font-size: 22px;
+  color: #9999a1;
+  text-align: left;
+}
+
+h1{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-family: 'Poppins';
+  color: #9999a1;
+  text-align: left;
+}
+
+
+
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="BOOTSTRAP.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="split left">
+  <div class="centered">
+    <img src="web/images/AppLogo.png" alt="spot sepsis" style="width:400px;height:120px;">
+    
+  </div>
+  <div class="bottomleft">
+    <p><font color="white">Copyright
+    <img src="web/images/copyright-symbol.png" height="25px" width="25px">
+    2020</font></p>
+  </div>
+</div>
+
+<div class="split right">
+  <h1> <b>SIGN IN</b></h1>
+  <div class="centered">
+    
+    <form id="form1">
+      <p>Username</p>
+      <input type="text"  id="ip2">
+      <br>
+      <br>
+      <p>Password</p>
+      <input type="password" id="ip2">
+    </form>
+
+    
+  </div>
+  <div class="bottomright">
+      <button onclick="location.href='web/Doctor_page.html'" class="button"><img src="web/images/next.png" width="30px" height="30px"></button>
+  </div>
+</div>
+</body>
+</html>
