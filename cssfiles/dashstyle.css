@@ -1,0 +1,147 @@
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  width: 85%;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  left: 40%;
+}
+.piccentre{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 50%;
+}
+.profile{
+    border-radius: 50px;
+  }
+
+  .btn {
+    top: 100px;
+    height: 60px;
+  background-color: #111;
+  border: none;
+  color: #d6ced6;
+  padding: 12px 16px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #524e52;
+}
+
+.flex-container {
+
+  top: 30%;
+  left: 2%;
+  display: flex;
+  background-color: #f1f1f1;
+  width: 100%;
+  
+}
+
+.flex-container > div {
+  font-family: 'Poppins';
+  color: #6d58f5;
+  left: 2%;
+  top: 30%;
+  border-right-color: black;
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.flex-container2 {
+  position: relative;
+  top: 5%;
+  left: 2%;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 2px;
+  
+}
+
+.flex-container2 > div {
+  width: 40%;
+  position: relative;
+  font-family: 'Poppins';
+  color: black;
+  left: 2%;
+  right: 5%;
+  top: 5%;
+  border-right-color: black;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  font-size: 30px;
+}
+.flex-container2 > div > img {
+  border-radius: 5%;
+}
+.flex-container2 > div > select {
+  border-radius: 5%;
+  border-width: 2px;
+  width: 80px;
+  position: relative;
+  left: 30%;
+  font-family: 'Poppins';
+  background-color:  #c2bcc2;
+  padding: 1%;
+  font-style: "font-size=4px";
+}
+#report{
+  background-color: white;
+}
+
+.flex-container3 {
+  position: relative;
+  top: 2%;
+  left: 5%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.flex-container3 > div {
+  background-color: white;
+  width: 80%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}

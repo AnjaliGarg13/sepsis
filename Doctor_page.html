@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="cssfiles/page1style.css">
+ <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+<div id="rcorners1"">
+	<p><b>PATIENT LIST</b></p>
+	<br><br>
+
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Disease Type</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#about">About</a>
+    <a href="#base">Base</a>
+  </div>
+  </div>
+
+
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Settings</a>
+  <a href="index.html">Login Page</a>
+</div>
+
+<div id="main">
+  <h2></h2>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<div class="container">
+  <a href="patient_dashboard.html">
+  <button class="button" type="submit"><img src="images/user.png" alt="Avatar" style="width:50px"></button>
+  <p><span>Jane</span></p>
+  </a>
+</div>
+
+<div class="container">
+  <button class="button" type="submit"><img src="images/user.png" alt="Avatar" style="width:50px"></button>
+  <p><span>Chris Fox.</span></p>
+</div>
+
+<div class="container">
+  <button class="button" type="submit"><img src="images/user.png" alt="Avatar" style="width:50px"></button>
+  <p><span>Rebecca Flex.</span></p>
+  
+</div>
+
+<div class="reminder">
+	<h1 ><font style="Poppins"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; REMINDERS   &nbsp; &nbsp;  </font></h1>
+
+	<div class="container">
+  <button class="button" type="submit"><img src="images/user.png" alt="Avatar" style="width:50px"></button>
+  <p><span>Chris Fox.</span></p>
+</div>
+
+	<div class="container">
+  <button class="button" type="submit"><img src="images/user.png" alt="Avatar" style="width:50px"></button>
+  <p><span>Chris Fox.</span></p></div>
+
+</div>
+</body>
+</html> 
