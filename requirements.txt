@@ -14,7 +14,7 @@ joblib==0.14.1
 MarkupSafe==1.1.1
 MongoAlchemy==0.19
 numpy==1.18.1
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 pandas==0.25.3
 Pillow==7.0.0
 pymongo==3.10.1
